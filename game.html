@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Cartas Coleccionables🃏</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="">
+            <span>
+              ESANTOS
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html">Clanes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Torneos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html">Ganadores</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="game.html">Videojuego</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="apoyo.html">Apoyanos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- contact section -->
+
+  <section class="about_section layout_padding">
+ 
+    <div class="container">
+      <div class="coins" id="coins">🪙 0</div>
+
+      <div id="recent-cards" class="recent-cards"></div>
+
+      <div class="pack-buttons">
+          <button onclick="confirmOpenPack('básico', 10)">
+              <img src="sobres/basico.jpg" alt="Básico" class="button-img">
+              Abrir Cofre
+              <div>Básico</div>
+              <div>(10 monedas)</div>
+
+          </button>
+          <button onclick="confirmOpenPack('casual', 15)">
+              <img src="sobres/imagen_casual.jpg" alt="Casual" class="button-img">
+              <div>Abrir Cofre</div>
+              <div>Casual</div>
+              <div>(15 monedas)</div>
+          </button>
+          <button onclick="confirmOpenPack('plus', 20)">
+              <img src="sobres/imagen_plus.jpg" alt="Plus" class="button-img">
+              Abrir Cofre 
+              <div>Plus</div>
+              <div>(20 monedas)</div>
+          </button>
+          <button onclick="confirmOpenPack('premium', 25)">
+              <img src="sobres/imagen_premium.jpg" alt="Premium" class="button-img">
+              Abrir Cofre
+              <div>Premium</div>
+              <div>(25 monedas)</div>
+          </button>
+      </div>
+
+      <div id="code-section" class="code-section">
+          <input type="text" id="code-input" placeholder="Ingresa tu código aquí">
+          <button onclick="redeemCode()">Canjear Código</button>
+      </div>
+
+      <div id="reset-button">
+        <button>Reiniciar Progreso</button>
+    </div>       
+      <div id="card-counter" class="card-counter">Cartas Desbloqueadas: 0 / 70</div>
+
+      <div class="rarity-counters">
+        <div id="common-counter" class="rarity-counter">Comunes Desbloqueadas: 0 / 34</div>
+        <div id="rare-counter" class="rarity-counter">Raras Desbloqueadas: 0 / 18</div>
+        <div id="epic-counter" class="rarity-counter">Épicas Desbloqueadas: 0 / 12</div>
+        <div id="legendary-counter" class="rarity-counter">Legendarias Desbloqueadas: 0 / 6</div>
+    </div>
+
+      <div id="game-board" class="game-board"></div>
+
+    
+  </div>
+
+  <div id="modal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-image">
+      <div id="caption"></div>
+  </div>
+
+  </section>
+
+
+
+  <!-- end contact section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding">
+    <div class="container">
+      <div class="info_social">
+        <div>
+          <a href="https://www.facebook.com/ESantosOficial">
+            <img src="images/facebook.png" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="https://www.twitch.tv/esantosyt">
+            <img src="images/twitch.png" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/esantos_yt">
+            <img src="images/instagram.png" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="https://www.youtube.com/@esantos_yt">
+            <img src="images/youtube.png" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="https://www.whatsapp.com/channel/0029VaPsfvGDOQIaLzy9N22k">
+            <img src="images/whatsapp.png" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="https://www.tiktok.com/@esantos_yt">
+            <img src="images/tik-tok.png" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="https://twitter.com/ESANTOS_YT">
+            <img src="images/twitter.png" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="https://t.me/esantosyt">
+            <img src="images/telegram.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div>
+        <p>
+          Gracias por apoyarnos. ¡Tu participación es importante para nosotros!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; 2024 All Rights Reserved By ESANTOS
+    </p>
+  </section>
+  <!-- footer section -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="game.js"></script>
+  <audio id="open-pack-sound" src="sonidos/open-pack.mp3"></audio>
+  <audio id="coin-sound" src="sonidos/moneda.mp3"></audio>
+
+
+</body>
+</body>
+
+</html>
+
