@@ -278,7 +278,7 @@ function selectCard(type, counts) {
     const probabilities = {
         'básico': [{ rarity: 'común', chance: 0.75 }, { rarity: 'rara', chance: 0.25 }],
         'casual': [{ rarity: 'común', chance: 0.2 }, { rarity: 'rara', chance: 0.7 }, { rarity: 'épica', chance: 0.1 }],
-        'plus': [{ rarity: 'rara', chance: 0.29 }, { rarity: 'épica', chance: 0.6 }, { rarity: 'legendaria', chance: 0.01 }],
+        'plus': [{ rarity: 'rara', chance: 0.29 }, { rarity: 'épica', chance: 0.7 }, { rarity: 'legendaria', chance: 0.01 }],
         'premium': [{ rarity: 'rara', chance: 0.05 }, { rarity: 'épica', chance: 0.6 }, { rarity: 'legendaria', chance: 0.35 }]
     }[type];
 
