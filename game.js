@@ -48,6 +48,20 @@ const cardImages = [
     { name: 'comun34.jpg', rarity: 'común' },
     { name: 'comun35.jpg', rarity: 'común' },
 
+    { name: 'comun36.jpg', rarity: 'común' },
+    { name: 'comun37.jpg', rarity: 'común' },
+    { name: 'comun38.jpg', rarity: 'común' },
+    { name: 'comun39.jpg', rarity: 'común' },
+    { name: 'comun40.jpg', rarity: 'común' },
+    { name: 'comun41.jpg', rarity: 'común' },
+    { name: 'comun42.jpg', rarity: 'común' },
+    { name: 'comun43.jpg', rarity: 'común' },
+    { name: 'comun44.jpg', rarity: 'común' },
+    { name: 'comun45.jpg', rarity: 'común' },
+    { name: 'comun46.jpg', rarity: 'común' },
+    { name: 'comun47.jpg', rarity: 'común' },
+    { name: 'comun48.jpg', rarity: 'común' },
+    { name: 'comun49.jpg', rarity: 'común' },    
 
     { name: 'rara1.jpg', rarity: 'rara' },
     { name: 'rara2.jpg', rarity: 'rara' },
@@ -66,7 +80,12 @@ const cardImages = [
     { name: 'rara16.jpg', rarity: 'rara' },
     { name: 'rara17.jpg', rarity: 'rara' },
     { name: 'rara18.jpg', rarity: 'rara' },
-
+    { name: 'rara19.jpg', rarity: 'rara' },
+    { name: 'rara20.jpg', rarity: 'rara' },
+    { name: 'rara21.jpg', rarity: 'rara' },
+    { name: 'rara22.jpg', rarity: 'rara' },
+    { name: 'rara23.jpg', rarity: 'rara' },
+    { name: 'rara24.jpg', rarity: 'rara' },
 
     { name: 'epica1.jpg', rarity: 'épica' },
     { name: 'epica2.jpg', rarity: 'épica' },
@@ -80,7 +99,12 @@ const cardImages = [
     { name: 'epica10.jpg', rarity: 'épica' },
     { name: 'epica11.jpg', rarity: 'épica' },
     { name: 'epica12.jpg', rarity: 'épica' },
-
+    { name: 'epica13.jpg', rarity: 'épica' },
+    { name: 'epica14.jpg', rarity: 'épica' },
+    { name: 'epica15.jpg', rarity: 'épica' },
+    { name: 'epica16.jpg', rarity: 'épica' },
+    { name: 'epica17.jpg', rarity: 'épica' },
+    { name: 'epica18.jpg', rarity: 'épica' },
 
     { name: 'legendaria1.jpg', rarity: 'legendaria' },
     { name: 'legendaria2.jpg', rarity: 'legendaria' },
@@ -88,6 +112,10 @@ const cardImages = [
     { name: 'legendaria4.jpg', rarity: 'legendaria' },
     { name: 'legendaria5.jpg', rarity: 'legendaria' },
     { name: 'legendaria6.jpg', rarity: 'legendaria' },
+    { name: 'legendaria7.jpg', rarity: 'legendaria' },
+    { name: 'legendaria8.jpg', rarity: 'legendaria' },
+    { name: 'legendaria9.jpg', rarity: 'legendaria' },
+    { name: 'legendaria10.jpg', rarity: 'legendaria' },
 ];
 
 const unlockedCards = new Set();
@@ -395,10 +423,10 @@ function resetProgress() {
     updateCardCounter(); // Actualiza el contador de cartas
 
     // Reinicia contadores de rarezas
-    commonCounterDiv.innerText = 'Comunes Desbloqueadas: 0 / 34';
-    rareCounterDiv.innerText = 'Raras Desbloqueadas: 0 / 18';
-    epicCounterDiv.innerText = 'Épicas Desbloqueadas: 0 / 12';
-    legendaryCounterDiv.innerText = 'Legendarias Desbloqueadas: 0 / 6';
+    commonCounterDiv.innerText = 'Comunes Desbloqueadas: 0 / 48';
+    rareCounterDiv.innerText = 'Raras Desbloqueadas: 0 / 24';
+    epicCounterDiv.innerText = 'Épicas Desbloqueadas: 0 / 18';
+    legendaryCounterDiv.innerText = 'Legendarias Desbloqueadas: 0 / 10';
 }
 
 function resetCodes() {
@@ -442,3 +470,4 @@ function showCoinReward(cardElement, coins) {
 
 // Crea las cartas inicialmente
 createCards();
+
