@@ -1119,3 +1119,11 @@ a:focus {
   background-color: #ffd700; /* Dorado más fuerte para legendarias */
   color: #000000; /* Color de texto oscuro */
 }
+
+.main-title {
+  font-size: 48px; /* Tamaño grande para el título */
+  text-align: center; /* Centrado horizontal */
+  margin-bottom: 20px; /* Espacio debajo del título */
+  font-weight: bold; /* Negrita para mayor énfasis */
+  color: #333; /* Color oscuro para buena visibilidad */
+}
