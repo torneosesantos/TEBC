@@ -123,16 +123,12 @@ let totalCoins = 0;
 
 const codes10 = new Set([
     "AERT24F", "YZQT56A", "REXJ78G", "PLOQ12B", "XCVN34D", 
-    "QWER91Z", "TYUI55H", "ASDF67J", "ZXCV23K", "FGHI45L", 
-    "VBNM89O", "BNMK12P", "QWES34X", "ASDF98C", "ERTY56M", 
-    "YUIO12S", "LKJH99V", "HGFDS45F", "EDCBA32A", "QAZWSX9"
+    "QWER91Z", "TYUI55H", "ASDF67J", "ZXCV23K", "FGHI45L"
 ]);
 
 const codes15 = new Set([
     "ABCDE12", "FGHIJ34", "KLMNO56", "PQRST78", "UVWXY90", 
-    "ZABCD11", "EFGHI22", "JKLMN33", "OPQRS44", "TUVWX55", 
-    "YZAB67", "CDEFG78", "HIJKL89", "MNOPQ90", "RSTUV11", 
-    "WXYZA22", "BCDEF33", "GHIJK44", "LMNOP55", "QRSTU66"
+    "ZABCD11", "EFGHI22", "JKLMN33", "OPQRS44", "TUVWX55"
 ]);
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -435,16 +431,12 @@ function resetCodes() {
     
     const originalCodes10 = [
         "AERT24F", "YZQT56A", "REXJ78G", "PLOQ12B", "XCVN34D", 
-        "QWER91Z", "TYUI55H", "ASDF67J", "ZXCV23K", "FGHI45L", 
-        "VBNM89O", "BNMK12P", "QWES34X", "ASDF98C", "ERTY56M", 
-        "YUIO12S", "LKJH99V", "HGFDS45F", "EDCBA32A", "QAZWSX9"
+        "QWER91Z", "TYUI55H", "ASDF67J", "ZXCV23K", "FGHI45L"
     ];
     
     const originalCodes15 = [
         "ABCDE12", "FGHIJ34", "KLMNO56", "PQRST78", "UVWXY90", 
-        "ZABCD11", "EFGHI22", "JKLMN33", "OPQRS44", "TUVWX55", 
-        "YZAB67", "CDEFG78", "HIJKL89", "MNOPQ90", "RSTUV11", 
-        "WXYZA22", "BCDEF33", "GHIJK44", "LMNOP55", "QRSTU66"
+        "ZABCD11", "EFGHI22", "JKLMN33", "OPQRS44", "TUVWX55"
     ];
 
     originalCodes10.forEach(code => codes10.add(code));
