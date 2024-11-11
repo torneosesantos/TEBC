@@ -175,13 +175,48 @@ function createCards() {
     });
 }
 
+function getProbabilitiesMessage(type) {
+    const probabilities = {
+        'básico': [
+            { rarity: 'Común', chance: 0.75 },
+            { rarity: 'Rara', chance: 0.25 }
+        ],
+        'casual': [
+            { rarity: 'Común', chance: 0.2 },
+            { rarity: 'Rara', chance: 0.7 },
+            { rarity: 'Épica', chance: 0.1 }
+        ],
+        'plus': [
+            { rarity: 'Rara', chance: 0.29 },
+            { rarity: 'Épica', chance: 0.7 },
+            { rarity: 'Legendaria', chance: 0.01 }
+        ],
+        'premium': [
+            { rarity: 'Rara', chance: 0.05 },
+            { rarity: 'Épica', chance: 0.6 },
+            { rarity: 'Legendaria', chance: 0.35 }
+        ]
+    };
+
+    let message = '';
+    probabilities[type].forEach(prob => {
+        message += `${prob.rarity}: ${Math.round(prob.chance * 100)}%\n`;
+    });
+
+    return message;
+}
+
+
 function confirmOpenPack(type, cost) {
     if (totalCoins < cost) {
         alert('No tienes suficientes monedas para abrir este cofre.');
         return;
     }
 
-    const confirmation = confirm(`¿Estás seguro de que quieres gastar ${cost} monedas para abrir un cofre ${type}?`);
+    // Definir las probabilidades según el tipo de cofre
+    const probabilitiesMessage = getProbabilitiesMessage(type);
+
+    const confirmation = confirm(`¿Estás seguro de que quieres gastar ${cost} monedas para abrir un cofre ${type}?\n\nProbabilidades:\n${probabilitiesMessage}`);
     if (confirmation) {
         openPack(type);
     }
