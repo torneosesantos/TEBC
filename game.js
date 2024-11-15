@@ -122,8 +122,8 @@ const unlockedCards = new Set();
 let totalCoins = 0;
 
 const codes10 = new Set([
-    "AERT24F", "YZQT56A", "REXJ78G", "PLOQ12B", "XCVN34D", 
-    "QWER91Z", "TYUI55H", "ASDF67J", "ZXCV23K", "FGHI45L"
+    "VBNM89O", "BNMK12P", "QWES34X", "ASDF98C", "ERTY56M", 
+    "YUIO12S", "LKJH99V", "HGFDS45F", "EDCBA32A", "QAZWSX9"
 ]);
 
 const codes15 = new Set([
@@ -465,8 +465,8 @@ function resetCodes() {
     codes15.clear();
     
     const originalCodes10 = [
-        "AERT24F", "YZQT56A", "REXJ78G", "PLOQ12B", "XCVN34D", 
-        "QWER91Z", "TYUI55H", "ASDF67J", "ZXCV23K", "FGHI45L"
+    "VBNM89O", "BNMK12P", "QWES34X", "ASDF98C", "ERTY56M", 
+    "YUIO12S", "LKJH99V", "HGFDS45F", "EDCBA32A", "QAZWSX9"
     ];
     
     const originalCodes15 = [
