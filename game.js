@@ -127,8 +127,8 @@ const codes10 = new Set([
 ]);
 
 const codes15 = new Set([
-    "ABCDE12", "FGHIJ34", "KLMNO56", "PQRST78", "UVWXY90", 
-    "ZABCD11", "EFGHI22", "JKLMN33", "OPQRS44", "TUVWX55"
+    "YZAB67", "CDEFG78", "HIJKL89", "MNOPQ90", "RSTUV11", 
+    "WXYZA22", "BCDEF33", "GHIJK44", "LMNOP55", "QRSTU66"
 ]);
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -470,8 +470,8 @@ function resetCodes() {
     ];
     
     const originalCodes15 = [
-        "ABCDE12", "FGHIJ34", "KLMNO56", "PQRST78", "UVWXY90", 
-        "ZABCD11", "EFGHI22", "JKLMN33", "OPQRS44", "TUVWX55"
+    "YZAB67", "CDEFG78", "HIJKL89", "MNOPQ90", "RSTUV11", 
+    "WXYZA22", "BCDEF33", "GHIJK44", "LMNOP55", "QRSTU66"
     ];
 
     originalCodes10.forEach(code => codes10.add(code));
